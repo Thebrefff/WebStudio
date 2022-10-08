@@ -1,10 +1,13 @@
 body {
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  color: #212121;
   position: absolute;
+  color: #212121;
 }
-.header {
+:root {
+  --brand-color: #212121;
+  --letter-spacing: 0.03em;
+}
+.header-content {
   font-weight: 500;
 }
 .web-logo {
@@ -13,7 +16,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
   color: inherit;
-  }
+}
 .web-blue {
   color: #2196f3;
 }
@@ -29,7 +32,10 @@ body {
 }
 .header-nav:hover,
 .header-contact:hover,
-.contact-footer:hover {
+.contact-footer:hover,
+.header-nav:focus,
+.header-contact:focus,
+.contact-footer:focus {
   color: #2196f3;
 }
 .header-contact {
@@ -64,7 +70,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-.main {
+.main-content {
   font-weight: 700;
 }
 .below-slogan {
@@ -74,17 +80,21 @@ body {
   color: #757575;
 }
 .below-slogan-header {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
-  color: #212121;
+  color: var(--brand-color);
 }
-.middle-content-header {
+.middle-content-header-work,
+.middle-content-header-team {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+.middle-content-header-team,
+.middle-content-pictures-two {
+  background: #f5f4fa;
 }
 .picture-title {
   font-size: 16px;
@@ -99,10 +109,9 @@ body {
 .footer {
   background: #2f303a;
   font-style: inherit;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing);
 }
 .street-footer {
   color: #ffffff;
@@ -134,15 +143,15 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing);
   text-align: center;
-  color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
   display: inline;
 }
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #2196f3;
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
