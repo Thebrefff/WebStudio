@@ -1,81 +1,153 @@
-.logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  color: #000000;
-  text-decoration: none;
-  list-style: none;
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #212121;
+  position: absolute;
 }
-.web {
+.header {
+  font-weight: 500;
+}
+.web-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: inherit;
+}
+.web-blue {
   color: #2196f3;
 }
-.menu {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  text-decoration: none;
-  list-style: none;
+.studio-white {
+  color: #ffffff;
 }
-.mail-tel {
+.header-nav {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
+}
+.header-nav:hover,
+.header-contact:hover,
+.contact-footer:hover {
+  color: #2196f3;
+}
+.header-contact {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
+}
+.slogan {
+  background: #2f303a;
 }
 .slogan-content {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  text-decoration: none;
-  list-style: none;
-  background-color: #2f303a;
-}
-.slogan {
-  background-color: #2f303a;
 }
 .slogan-button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.below-slogan {
-  font-family: "Roboto";
-  font-style: normal;
+.slogan-button-text {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  list-style: none;
-  color: #212121;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
-.below-slogan-p {
-  font-family: "Roboto";
-  font-style: normal;
+main {
+  font-weight: 700;
+}
+.below-slogan {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  list-style: none;
+  line-height: 1.71;
   color: #757575;
+}
+.below-slogan-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.middle-content-header {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.picture-title {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.picture-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #757575;
+}
+.footer {
+  background: #2f303a;
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.street-footer {
+  color: #ffffff;
+}
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.portfolio-picture-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: inherit;
+}
+.portfolio-picture-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: inherit;
+  color: #757575;
+}
+.underline {
+  text-decoration: underline;
+}
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  display: inline;
+}
+.button:hover {
+  background-color: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.blue-current-site {
+  color: #2196f3;
 }
