@@ -15,14 +15,14 @@ body {
 .header-content {
   font-weight: 500;
   list-style: none;
-}
+ }
 .web-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: inherit;
-}
+ }
 .web-blue {
   color: var(--blue-color);
 }
@@ -35,7 +35,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
-}
+ }
 .header-nav:hover,
 .header-contact:hover,
 .contact-footer:hover,
@@ -64,6 +64,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  align-items: center;
 }
 .slogan-button {
   background: var(--blue-color);
@@ -178,4 +179,20 @@ body {
 .buttons-list,
 .portfolio-pictures {
   list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
+.header-display {
+  display: inline-block;
+}
+.pictures-one,
+.pictures-two {
+  display: inline-block;
+}
+.header-team {
+margin: 94px 0px;
+
 }
