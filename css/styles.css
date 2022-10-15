@@ -15,14 +15,15 @@ body {
 .header-content {
   font-weight: 500;
   list-style: none;
- }
+  display: flex;
+}
 .web-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: inherit;
- }
+}
 .web-blue {
   color: var(--blue-color);
 }
@@ -35,7 +36,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
- }
+}
 .header-nav:hover,
 .header-contact:hover,
 .contact-footer:hover,
@@ -65,6 +66,8 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
   align-items: center;
+  margin-top: 200px;
+  padding-bottom: 30px;
 }
 .slogan-button {
   background: var(--blue-color);
@@ -72,7 +75,9 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-}
+  margin-top: 30px;
+  margin-bottom: 200px;
+    }
 .slogan-button-text {
   font-weight: 700;
   font-size: 16px;
@@ -80,7 +85,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
-}
+   }
 .main-content {
   font-weight: 700;
 }
@@ -90,6 +95,8 @@ body {
   line-height: 1.71;
   color: var(--contact-color);
   list-style: none;
+  display: flex;
+  margin-top: 94px;
 }
 .below-slogan-header {
   font-size: 14px;
@@ -103,11 +110,12 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  padding-bottom: 50px;
 }
 .middle-content-header-team,
 .middle-content-pictures-two {
   background: var(--grey-background);
-}
+ }
 .picture-title {
   font-size: 16px;
   line-height: 1.19;
@@ -180,19 +188,41 @@ body {
 .portfolio-pictures {
   list-style: none;
 }
+* {
+  box-sizing: border-box;
+}
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 15px;
-  }
+}
 .header-display {
-  display: inline-block;
+  /* display: inline-block; */
+  display: flexbox;
 }
 .pictures-one,
 .pictures-two {
   display: inline-block;
+  justify-content: center;
 }
 .header-team {
-margin: 94px 0px;
-
+  margin: 94px 0px;
+}
+main {
+  max-width: 1200px;
+}
+.middle-content-header-work {
+  margin-top: 94px;
+}
+.first,
+.one {
+padding-left: 15px;
+}
+.third,
+.four {
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
