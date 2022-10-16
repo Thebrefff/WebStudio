@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", "Segoe UI", Tahoma, Verdana, sans-serif;
   position: absolute;
@@ -15,8 +18,7 @@ body {
 .header-content {
   font-weight: 500;
   list-style: none;
-  display: flex;
-}
+  }
 .web-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -65,9 +67,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  align-items: center;
+  /* align-items: center;
   margin-top: 200px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
 }
 .slogan-button {
   background: var(--blue-color);
@@ -75,8 +77,8 @@ body {
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  margin-top: 30px;
-  margin-bottom: 200px;
+  /* margin-top: 30px;
+  margin-bottom: 200px; */
     }
 .slogan-button-text {
   font-weight: 700;
@@ -95,8 +97,8 @@ body {
   line-height: 1.71;
   color: var(--contact-color);
   list-style: none;
-  display: flex;
-  margin-top: 94px;
+  /* display: flex;
+  margin-top: 94px; */
 }
 .below-slogan-header {
   font-size: 14px;
@@ -109,8 +111,8 @@ body {
 .middle-content-header-team {
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
-  padding-bottom: 50px;
+  /* text-align: center;
+  padding-bottom: 50px; */
 }
 .middle-content-header-team,
 .middle-content-pictures-two {
@@ -168,7 +170,7 @@ body {
   background-color: var(--grey-background);
   border-radius: 4px;
   border: none;
-  display: inline;
+  /* display: inline; */
 }
 .button:hover,
 .button:focus {
@@ -188,41 +190,162 @@ body {
 .portfolio-pictures {
   list-style: none;
 }
-* {
-  box-sizing: border-box;
-}
+
+
+
+/* ------------------------------------------------------ */
 .container {
-  max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 15px;
+  display: flex;
+  border-bottom: 1px solid black;
+  }
+.header-content {
+ display: flex;
+ margin-left: 215px;
 }
-.header-display {
-  /* display: inline-block; */
-  display: flexbox;
+
+.agencja {
+  margin-left: 93px;
 }
-.pictures-one,
+.portfolio, .kontakt {
+  margin-left: 46px;
+}
+.mail {
+  margin-left: 371px;
+}
+.tel {
+  margin-left: 50px;
+ }
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: none;
+  }
+h1 {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+.slogan-button {
+  padding: 10px 41px 10px 42px ;
+  margin-bottom: 200px;
+}
+
+/* ------------------------------------------------------ */
+
+.below-slogan-container {
+margin-top: 94px;
+/* margin-left: 215px; */
+}
+
+.below-slogan {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 30px;
+ justify-content:space-between;
+ margin-left: 215px;
+ margin-right: 215px;
+ /* margin-bottom: 94px; */
+ padding-bottom: 94px;
+ }
+
+.bs {
+
+}
+
+h4 {
+margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------ */
+
+
+
+.middle-content-hw, .middle-content-ht {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 94px; */
+ 
+}
+
+.middle-content-header-work, .middle-content-header-team {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+ }
+
+ .middle-content-header-team {
+  padding-top: 94px;
+  margin-bottom: 0px;
+  }
+
+.middle-content-pictures-one, .middle-content-pictures-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+.first, .second, .one {
+  padding-right: 30px;
+}
+
+.middle-content-pictures-one {
+}
+
+.middle-content-pictures-two {
+padding-top: 0px;
+}
+
+.picture-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.picture-description {
+  margin-bottom: 30px;
+}
+
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 215px;
+}
+
+
+
+/* .bs1 {
+  margin-left: 215px;
+} */
+
+
+
+/* .middle-content-header-work,
+.middle-content-header-team {
+  text-align: center;
+  padding-bottom: 50px; */
+}
+
+/* .header-display {
+  display: inline-block;
+  display: flexbox; */
+}
+/* .pictures-one,
 .pictures-two {
   display: inline-block;
-  justify-content: center;
+  justify-content: center; */
 }
-.header-team {
+/* .header-team {
   margin: 94px 0px;
+} */
+
+/* .middle-content-header-work {
+  margin-top: 94px; */
 }
-main {
-  max-width: 1200px;
-}
-.middle-content-header-work {
-  margin-top: 94px;
-}
-.first,
-.one {
-padding-left: 15px;
-}
-.third,
-.four {
-  padding-right: 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+
 }
