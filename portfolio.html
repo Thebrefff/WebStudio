@@ -9,10 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,60 +18,69 @@
     />
   </head>
   <body>
-    <header>
-      <div>
+  <header>
+      <div class="container">
         <nav>
-          <ul class="header-content">
-            <li>
-              <a class="web-logo" href="#"
-                ><span class="web-blue">Web</span>Studio</a
-              >
-            </li>
-            <li><a class="header-nav" href="index.html">Agencja</a></li>
-            <li>
-              <a class="header-nav" href="portfolio.html"
-                ><span class="blue-current-site">Portfolio</span></a
-              >
-            </li>
-            <li><a class="header-nav" href="#kontakt">Kontakt</a></li>
-          </ul>
+          <div class="content">
+            <a class="web-logo" href="#"
+              ><span class="web-blue">Web</span>Studio</a
+            >
+            <ul class="header-content">
+              <li class="header-display">
+                <a class="header-nav agencja" href="index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li class="header-display">
+                <a class="header-nav portfolio" href="portfolio.html"
+                  ><span class="blue-current-site">Portfolio</span></a
+                >
+              </li>
+              <li class="header-display">
+                <a class="header-nav kontakt" href="#kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <ul class="header-content">
           <li>
-            <a class="header-contact" href="mailto:info@devstudio.com"
+            <a class="header-contact mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="header-contact" href="tel:48111111111">+48 111 111 111</a>
+            <a class="header-contact tel" href="tel:48111111111"
+              >+48 111 111 111</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main class="main-content">
-      <div>
+      <section class="section">
+      <div class="portfolio-nav container">
         <ul class="buttons-list">
-          <li>
-            <button type="button" class="button">Wszystkie</button>
+          <li class="buttons">
+            <button type="button" class="button"><span class="portfolio-button-text">Wszystkie</span></button>
           </li>
-          <li>
-            <button type="button" class="button">Strony</button>
+          <li class="buttons">
+            <button type="button" class="button"><span class="portfolio-button-text">Strony</span></button>
           </li>
-          <li>
-            <button type="button" class="button">Aplikacje</button>
+          <li class="buttons">
+            <button type="button" class="button"><span class="portfolio-button-text">Aplikacje</span></button>
           </li>
-          <li>
-            <button type="button" class="button">Design</button>
+          <li class="buttons">
+            <button type="button" class="button"><span class="portfolio-button-text">Dizajn</span></button>
           </li>
-          <li>
-            <button type="button" class="button">Marketing</button>
+          <li class="buttons">
+            <button type="button" class="button"><span class="portfolio-button-text">Marketing</span></button>
           </li>
         </ul>
       </div>
-      <div>
+      <div class="container">
         <ul class="portfolio-pictures">
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/technocrack.jpg"
                 alt="wyświetlona strona internetowa na laptopie"
@@ -89,7 +94,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/neworlean.jpg"
                 alt="dwóch koszykarzy podczas meczu"
@@ -103,7 +108,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/seafood.jpg"
                 alt="logo restauracji"
@@ -117,7 +122,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/prime.jpg"
                 alt="słuchawki nauszne"
@@ -131,7 +136,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/boxes.jpg"
                 alt="dwa pudełka"
@@ -145,7 +150,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/borders.jpg"
                 alt="wyświetlona strona
@@ -160,7 +165,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/edition.jpg"
                 alt="Magazyn (gazeta)"
@@ -174,7 +179,7 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/lab.jpg"
                 alt="Etykieta"
@@ -188,14 +193,14 @@
             </figure>
           </li>
           <li>
-            <figure>
+            <figure class="pictures-three">
               <img
                 src="./images/business.jpg"
                 alt="osoba pracująca na laptopie"
                 width="370"
                 height="294"
               />
-              <figcaption>
+              <figcaption class="portfolio-picture-title">
                 Growing Business
                 <p class="portfolio-picture-description">Aplikacja</p>
               </figcaption>
@@ -203,9 +208,10 @@
           </li>
         </ul>
       </div>
+      </section>
     </main>
-    <footer>
-      <div id="kontakt">
+    <footer class="section-footer">
+      <div id="kontakt" class="container">
         <address class="footer">
           <ul class="footer-list">
             <li>
@@ -215,12 +221,12 @@
               >
             </li>
             <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21</li>
-            <li>
+            <li class="mail-footer">
               <a class="contact-footer" href="mailto:info@devstudio.com"
                 ><span class="underline">info@devstudio.com</span></a
               >
             </li>
-            <li>
+            <li class="tel-footer">
               <a class="contact-footer" href="tel:48111111111"
                 >+48 111 111 111</a
               >
