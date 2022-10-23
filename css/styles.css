@@ -58,6 +58,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--contact-color);
   text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 .slogan {
   background: var(--brand-background);
@@ -327,7 +330,7 @@ figure {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* ----------------------------HOMEWORK4-------------------------------------------- */
+/* ----------------------------HOMEWORK4------------------------------------ */
 .slogan {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
     url("../images/slogan.jpg");
@@ -338,7 +341,7 @@ figure {
 .bs-icon-bg {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--grey-background);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -367,17 +370,19 @@ figure {
 }
 .social-media-icon-ft:hover,
 .social-media-icon-ft:focus {
-  background-color: #2196f3;
+  background-color: var(--blue-color);
   cursor: pointer;
 }
 .social-media-icon:hover {
-  background: #2196f3;
+  background: var(--blue-color);
   cursor: pointer;
-  fill: #ffffff;
-  }
+}
 .social-media-icons:hover {
-  fill: #ffffff;
-  }
+  background: var(--blue-color);
+}
+.social-media-icon:hover .social-media-icons {
+  fill: var(--white-color);
+}
 .social {
   display: flex;
   list-style: none;
@@ -436,26 +441,25 @@ figure {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   margin-top: 72px;
 }
-.social-media-icons {
+.social-media-icons,
+.client-logo {
   fill: #afb1b8;
 }
 .social-media-icons-ft {
-  fill: #ffffff;
-}
-.client-logo {
-  fill: #afb1b8;
+  fill: var(--white-color);
 }
 .client-logo:hover,
 .above-footer-icon-bg:hover,
 .client-logo:focus,
 .above-footer-icon-bg:focus {
-  fill: #2196f3;
+  fill: var(--blue-color);
   cursor: pointer;
-  border-color: #2196f3;
+  border-color: var(--blue-color);
 }
+
 /* -Portfolio-------------------------------------------------------- */
 
 .buttons-list {
