@@ -251,7 +251,8 @@ h1 {
   flex-direction: column;
 }
 .middle-content-header-work,
-.middle-content-header-team {
+.middle-content-header-team,
+.above-footer {
   display: flex;
   justify-content: center;
 }
@@ -320,8 +321,16 @@ figure {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+/* ----------------------------HOMEWORK4-------------------------------------------- */
+.slogan {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/slogan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/* -Portfolio----------------------------------------------------- */
+/* -Portfolio-------------------------------------------------------- */
 
 .buttons-list {
   display: flex;
