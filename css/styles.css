@@ -631,24 +631,12 @@ figure {
 /* ----------------------------HOMEWORK5-------------------------------------------- */
 
 .portfolio-pictures-box {
-  width: 301px;
-  height: 196px;
-  position: relative;
-}
-.pictures-portfolio-overlay-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-}
-
-.picture-portfolio-box-test {
   width: 370px;
-  height: 294px;
+  height: 299px;
   position: relative;
   overflow: hidden;
 }
-.picture-portfolio-overlay-test {
+.pictures-portfolio-overlay {
   position: absolute;
   display: flex;
   width: 100%;
@@ -659,14 +647,14 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.picture-portfolio-overlay-text-test {
+.pictures-portfolio-overlay-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.picture-portfolio-box-test:hover .picture-portfolio-overlay-test {
+.portfolio-pictures-box:hover .pictures-portfolio-overlay {
   transform: translate(0%, -100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
