@@ -40,22 +40,24 @@ body {
 }
 .contact-link-icon {
   fill: #757575;
-  transition: 250ms;
+}
+.blue:hover,
+.blue:focus {
+  fill: var(--blue-color);
+  color: var(--blue-color);
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-nav:hover,
 .header-contact:hover,
 .contact-footer:hover,
 .slogan-button:hover,
-.contact-link-icon:hover,
 .header-nav:focus,
 .header-contact:focus,
 .contact-footer:focus,
-.slogan-button:focus,
-.contact-link-icon:focus {
+.slogan-button:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
-  stroke: var(--blue-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -470,10 +472,16 @@ figure {
 .social-media-icons-ft {
   fill: var(--white-color);
 }
-.client-logo:hover,
 .above-footer-icon-bg:hover,
-.client-logo:focus,
 .above-footer-icon-bg:focus {
+  color: var(--blue-color);
+  cursor: pointer;
+  border-color: var(--blue-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-logo:hover,
+.client-logo:focus {
   fill: var(--blue-color);
   cursor: pointer;
   border-color: var(--blue-color);
@@ -487,11 +495,9 @@ figure {
   position: absolute;
   width: 53px;
   height: 4px;
-  background: #2196f3;
+  background: var(--blue-color);
   top: 84px;
-  left: 557px;
-  padding: 0;
-  margin: 0;
+  left: 644px;
   border-radius: 2px;
 }
 .site-two::after {
@@ -499,12 +505,78 @@ figure {
   position: absolute;
   width: 58px;
   height: 4px;
-  background: #2196f3;
+  background: var(--blue-color);
   top: 84px;
-  left: 656px;
+  left: 743px;
   padding: 0;
   margin: 0;
   border-radius: 2px;
+}
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 0.8s ease-out;
+  transform: scaleX(-100%);
+  pointer-events: fill;
+  z-index: 3;
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: auto;
+  position: relative;
+}
+.modal-btn {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.x-sign {
+  padding: 0;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+}
+.is-hidden {
+  transform: translateX(-100%);
+  transition: transform 0.7s ease-in;
+  opacity: 0.9;
+  visibility: initial;
+  pointer-events: fill;
+}
+.pictures-one-layout {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  z-index: 2;
+  top: 1522px;
+}
+.layout-p-one {
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 27px;
+  padding: 0;
 }
 
 /* -Portfolio-------------------------------------------------------- */
@@ -554,4 +626,50 @@ figure {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------------------HOMEWORK5-------------------------------------------- */
+
+.portfolio-pictures-box {
+  width: 301px;
+  height: 196px;
+  position: relative;
+}
+.pictures-portfolio-overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.picture-portfolio-box-test {
+  width: 370px;
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+.picture-portfolio-overlay-test {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-right: 45px;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.picture-portfolio-overlay-text-test {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.picture-portfolio-box-test:hover .picture-portfolio-overlay-test {
+  transform: translate(0%, -100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  background: #2196f3;
+  height: 100%;
 }
