@@ -471,6 +471,7 @@ figure {
   display: flex;
   list-style: none;
   margin-left: 70px;
+  padding: 0;
 }
 .footer-div-list {
   display: flex;
@@ -478,6 +479,7 @@ figure {
   gap: 10px;
   margin-top: 20px;
   margin-left: 70px;
+  padding: 0;
 }
 .div-footer {
   display: flex;
@@ -602,6 +604,83 @@ figure {
   letter-spacing: 0.03em;
   margin-top: 27px;
   padding: 0;
+}
+
+/* ----------------------------HOMEWORK6-------------------------------------------- */
+
+.newsletter-list,
+.newsletter-list-2 {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.newsletter-list {
+  margin-bottom: 0;
+  margin-left: 78px;
+}
+.newsletter-list-2 {
+  margin-top: 20px;
+  margin-left: 78px;
+}
+.newsletter-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 72px;
+}
+.newsletter {
+  max-width: 570px;
+  padding: 0;
+  margin: 0 auto;
+}
+.email-input {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 255, 255, 0.8);
+}
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  margin-left: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+.newsletter-button-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-left: 42px;
+  margin-right: 24px;
+  padding: 0;
+}
+.icon-send {
+  padding: 0;
+}
+.newsletter-box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.email-input:focus-within {
+  outline: none;
 }
 
 /* -Portfolio-------------------------------------------------------- */
