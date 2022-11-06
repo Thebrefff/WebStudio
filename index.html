@@ -78,6 +78,94 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <ul class="modal-list">
+                <li class="modal-item-1">
+                  Zostaw swoje dane w formularzu poniżej
+                </li>
+                <li class="modal-phone">
+                  <form name="user_name" class="modal-form">
+                    <span class="modal-form-titl"> </span>
+                    <svg class="modal-logo" width="18" height="18">
+                      <use
+                        href="./images/icons.svg/icons.svg#icon-person-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <label class="modal-form-title-1">
+                      Imię
+                      <input
+                        type="text"
+                        class="modal-item-2"
+                        name="username"
+                        placeholder="66"
+                      />
+                    </label>
+                  </form>
+                </li>
+                <li class="modal-list-items">
+                  <form name="phone" class="modal-form">
+                    <span class="modal-form-title"> </span>
+                    <svg class="modal-logo" width="19" height="19">
+                      <use
+                        href="./images/icons.svg/icons.svg#icon-phone-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <label class="modal-form-title-1">
+                      Telefon
+                      <input
+                        type="tel"
+                        class="modal-item-2"
+                        name="phone_number"
+                        placeholder="77"
+                      />
+                    </label>
+                  </form>
+                </li>
+                <li class="modal-list-items">
+                  <form name="email" class="modal-form">
+                    <span class="modal-form-titl"> </span>
+                    <svg class="modal-logo" width="24" height="18">
+                      <use
+                        href="./images/icons.svg/icons.svg#icon-email-black-18dp-1"
+                      ></use>
+                    </svg>
+                    <label class="modal-form-title-1">
+                      Email
+                      <input
+                        type="email"
+                        class="modal-item-2"
+                        name="email"
+                        placeholder="88"
+                      />
+                    </label>
+                  </form>
+                </li>
+                <li class="modal-list-items">
+                  <form name="comment" class="modal-form">
+                    <label class="modal-form-title-1">
+                      Komentarz
+                      <textarea
+                        class="textarea"
+                        name="feedback"
+                        placeholder="Wprowadź tekst"
+                      ></textarea>
+                    </label>
+                  </form>
+                </li>
+                <li>
+                  <form name="rules" class="">
+                    <input type="checkbox" name="rules" />
+                    <label class="rules">
+                      Oświadczam iż akceptuję
+                      <a class="rules-link" href="">Regulamin</a> i
+                      <a class="rules-link" href=""> Politykę Prywatności. </a>
+                    </label>
+                  </form>
+                </li>
+                <li>
+                  <button type="submit" class="send-button">Wyślij</button>
+                </li>
+              </ul>
+
               <button class="modal-btn" type="button" data-modal-close>
                 <span
                   ><svg class="x-sign" width="18" height="18">
@@ -422,28 +510,28 @@
                 </svg>
               </div>
             </li>
-            <li class="above-footer-icon-bg-test">
+            <li>
               <div class="above-footer-icon-bg">
                 <svg class="client-logo" width="170" height="92">
                   <use href="./images/icons.svg/icons.svg#icon-Logo-8"></use>
                 </svg>
               </div>
             </li>
-            <li class="above-footer-icon-bg-test">
+            <li>
               <div class="above-footer-icon-bg">
                 <svg class="client-logo" width="170" height="92">
                   <use href="./images/icons.svg/icons.svg#icon-Logo-9"></use>
                 </svg>
               </div>
             </li>
-            <li class="above-footer-icon-bg-test">
+            <li>
               <div class="above-footer-icon-bg">
                 <svg class="client-logo" width="170" height="92">
                   <use href="./images/icons.svg/icons.svg#icon-Logo-10"></use>
                 </svg>
               </div>
             </li>
-            <li class="above-footer-icon-bg-test">
+            <li>
               <div class="above-footer-icon-bg">
                 <svg class="client-logo" width="170" height="92">
                   <use href="./images/icons.svg/icons.svg#icon-Logo-11"></use>
@@ -465,7 +553,7 @@
                   ><span class="studio-white">Studio</span></a
                 >
               </li>
-              <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21 </li>
+              <li class="street-footer">m. Warszawa, Aleje Jerozolimskie 21</li>
               <li class="mail-footer">
                 <a class="contact-footer" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -527,22 +615,33 @@
             </ul>
             <ul class="newsletter-list-2">
               <li class="newsletter-email-box">
-                <form name="newsletter" class="newsletter-form" autocomplete="off">
-                  <label class="newsletter-form">                   
-                    <input type="email" class="email-input" name="email" placeholder="E-mail" required />
+                <form
+                  name="newsletter"
+                  class="newsletter-form"
+                  autocomplete="off"
+                >
+                  <label class="newsletter-form">
+                    <input
+                      type="email"
+                      class="email-input"
+                      name="email"
+                      placeholder="E-mail"
+                      required
+                    />
                   </label>
                 </form>
               </li>
               <li>
                 <button type="submit" class="subscribe-button">
                   <div class="newsletter-box">
-                  <span class="newsletter-button-title"> Zapisz się </span> <svg class="icon-send" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-icon-send"
-                    ></use>
-                  </svg>
-                </div>
-              </button>
+                    <span class="newsletter-button-title"> Zapisz się </span>
+                    <svg class="icon-send" width="24" height="24">
+                      <use
+                        href="./images/icons.svg/icons.svg#icon-icon-send"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
               </li>
             </ul>
           </div>
