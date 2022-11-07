@@ -673,11 +673,9 @@ figure {
 }
 .icon-send {
   padding: 0;
-}
-.newsletter-box {
-  display: flex;
-  align-items: center;
-  text-align: center;
+  position: relative;
+  top: 6px;
+  right: 13px;
 }
 .email-input:focus-within {
   outline: none;
@@ -721,31 +719,27 @@ figure {
   /* position: relative; */
 }
 .modal-phone {
-  margin-top: 12px;
-}
-.modal-list-items {
   margin-top: 10px;
 }
+.modal-list-items {
+  margin-top: 6px;
+}
 .modal-form-title {
-  position: absolute;
   height: 14px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  z-index: 3;
-  top: 78px;
+  bottom: 10px;
 }
-.modal-form-title-1 {
-  position: relative;
-  height: 14px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #500fe7;
+.name-phone-title {
+  margin-left: -22px;
 }
+.email-title {
+  margin-left: -28px;
+}
+
 .modal-form-title-11 {
   height: 14px;
   font-weight: 400;
@@ -761,7 +755,6 @@ figure {
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 25px;
 }
 .textarea::placeholder {
   font-weight: 400;
@@ -782,6 +775,10 @@ figure {
 .rules-link {
   color: var(--blue-color);
 }
+.rules-p {
+  margin-top: 12px;
+  padding: 0;
+}
 .send-button {
   width: 200px;
   height: 50px;
@@ -797,6 +794,9 @@ figure {
   font-size: 16px;
   line-height: 30px;
   cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 /* -Portfolio-------------------------------------------------------- */
