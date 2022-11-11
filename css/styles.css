@@ -828,8 +828,8 @@ input[type="checkbox"] {
   cursor: pointer;
   position: absolute;
   width: 420px;
-  height: 20px;
-  bottom: 115px;
+  height: 30px;
+  bottom: 120px;
   cursor: pointer;
   z-index: 2;
 }
