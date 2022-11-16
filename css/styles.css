@@ -708,7 +708,13 @@ figure {
   margin: 0 auto;
   font-size: smaller;
 }
-.modal-form:has(input:focus) .modal-logo {
+.modal-phone:has(input:focus) .logo-username {
+  fill: #2196f3;
+}
+.modal-list-items:has(input:focus) .logo-phone {
+  fill: #2196f3;
+}
+.for-focus:has(input:focus) .logo-email {
   fill: #2196f3;
 }
 .modal-logo {
@@ -719,6 +725,7 @@ figure {
 }
 .modal-form {
   width: 448px;
+  margin: 0 auto;
 }
 .modal-phone {
   margin-top: 10px;
