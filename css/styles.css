@@ -7,7 +7,6 @@ body {
 }
 :root {
   --brand-color: #212121;
-  --letter-spacing: 0.03em;
   --brand-background: #2f303a;
   --grey-background: #f5f4fa;
   --blue-color: #2196f3;
@@ -39,7 +38,7 @@ body {
   color: inherit;
 }
 .contact-link-icon {
-  fill: #757575;
+  fill: var(--contact-color);
 }
 .blue:hover,
 .blue:focus {
@@ -127,7 +126,7 @@ body {
 .below-slogan-header {
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
 }
@@ -155,7 +154,7 @@ body {
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
 }
 .section-footer {
   background: var(--brand-background);
@@ -198,7 +197,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
-  letter-spacing: var(--letter-spacing);
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .button:hover,
@@ -553,7 +552,7 @@ figure {
 .modal {
   width: 528px;
   height: 581px;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -564,7 +563,7 @@ figure {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
@@ -627,7 +626,7 @@ figure {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   margin-top: 72px;
 }
 .newsletter {
@@ -652,7 +651,7 @@ figure {
 .subscribe-button {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -665,7 +664,7 @@ figure {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   margin-left: 42px;
   margin-right: 24px;
   padding: 0;
@@ -697,7 +696,7 @@ figure {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--brand-color);
 }
 .modal-item-2 {
   height: 40px;
@@ -709,13 +708,13 @@ figure {
   font-size: smaller;
 }
 .modal-phone:has(input:focus) .logo-username {
-  fill: #2196f3;
+  fill: var(--blue-color);
 }
 .modal-list-items:has(input:focus) .logo-phone {
-  fill: #2196f3;
+  fill: var(--blue-color);
 }
 .for-focus:has(input:focus) .logo-email {
-  fill: #2196f3;
+  fill: var(--blue-color);
 }
 .modal-logo {
   position: relative;
@@ -739,7 +738,7 @@ figure {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--contact-color);
 }
 .name-phone-title {
   margin-left: -22px;
@@ -787,7 +786,7 @@ figure {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--contact-color);
 }
 .rules-link {
   color: var(--blue-color);
@@ -799,7 +798,7 @@ figure {
 .send-button {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white-color);
@@ -817,7 +816,7 @@ figure {
 }
 .modal-item-2:focus,
 .textarea:focus {
-  outline: 1px solid #2196f3;
+  outline: 1px solid var(--blue-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: outline;
@@ -856,12 +855,12 @@ input[type="checkbox"] + label:before {
   transition-property: background, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border: 2px solid #030202;
   border-radius: 2px;
 }
 input[type="checkbox"]:checked + label:before {
-  background-color: #2196f3;
+  background-color: var(--blue-color);
   border: none;
 }
 
@@ -947,13 +946,13 @@ input[type="checkbox"]:checked + label:before {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .portfolio-pictures-hover:hover .pictures-portfolio-overlay {
   transform: translate(0%, -100%);
   transition-property: fill, color, border, background-color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background: #2196f3;
+  background: var(--blue-color);
   height: 100%;
 }
