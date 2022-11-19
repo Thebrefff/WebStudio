@@ -35,7 +35,8 @@ body {
 .modal__link {
   color: var(--blue-color);
 }
-.studio-white {
+.logo--white-accent,
+.address__item--street {
   color: var(--white-color);
 }
 .menu__link {
@@ -48,8 +49,8 @@ body {
 .menu__icon {
   fill: var(--contact-color);
 }
-.menu__icon--blue-acent:hover,
-.menu__icon--blue-acent:focus {
+.menu__icon--blue-accent:hover,
+.menu__icon--blue-accent:focus {
   fill: var(--blue-color);
   color: var(--blue-color);
   transition-property: fill, color;
@@ -58,11 +59,11 @@ body {
 }
 .menu__link:hover,
 .menu__link--contact:hover,
-.contact-footer:hover,
+.address__link:hover,
 .slogan__button:hover,
 .menu__link:focus,
 .menu__link--contact:focus,
-.contact-footer:focus,
+.address__link:focus,
 .slogan__button:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
@@ -72,14 +73,14 @@ body {
 }
 .menu__link,
 .menu__link--contact,
-.contact-footer,
+.address__link,
 .slogan__button,
-.menu__icon--blue-acent,
-.social-media-icon-ft,
+.menu__icon--blue-accent,
+.join-us__link,
 .team-social-media__link,
 .team-social-media__icon,
-.above-footer-icon-bg,
-.client-logo {
+.clients__logo-field,
+.clients__logo-icon {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, color, border, background-color;
@@ -177,41 +178,42 @@ body {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.footer {
+.address {
   background: var(--brand-background);
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.section-footer {
+.footer {
   background: var(--brand-background);
 }
-.street-footer {
-  color: var(--white-color);
-}
-.contact-footer {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.portfolio-picture-title {
+.portfolio-cards__item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: inherit;
+  margin-top: 20px;
+  margin-left: 24px;
 }
-.portfolio-picture-description {
+.portfolio-cards__item-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: inherit;
   color: var(--contact-color);
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
-.underline {
+.address__link--underline {
   text-decoration: underline;
 }
-.button {
+.portfolio-navigation__button {
   cursor: pointer;
   background-color: var(--grey-background);
   border-radius: 4px;
@@ -219,8 +221,9 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, color, border;
+  padding: 6px 22px;
 }
-.portfolio-button-text {
+.portfolio-navigation__button-title {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -228,8 +231,8 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.button:hover,
-.button:focus {
+.portfolio-navigation__button:hover,
+.portfolio-navigation__button:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -239,18 +242,15 @@ body {
   transition-duration: 25ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Powyżej celowo skróciłem czas do 25ms, zamiast 250ms. Wg mnie powolna zmiana koloru treści z czarnej na białą w buttonach portfolio źle wygląda */
+/* Powyżej celowo skróciłem czas do 25ms, zamiast 250ms. Wg mnie powolna zmiana koloru treści z czarnej na białą w buttonach portfolio słabo wygląda */
 
 .what-we-do__list,
 .team__list,
-.footer-list,
-.buttons-list,
-.portfolio-pictures {
+.address__list,
+.portfolio-navigation__list,
+.portfolio-cards__list {
   list-style: none;
 }
-
-/* -Index----------------------------------------------------- */
-
 .container {
   margin: 0 auto;
   width: 100%;
@@ -276,7 +276,9 @@ h1 {
   padding-top: 200px;
   margin-bottom: 30px;
 }
-.below-slogan-container {
+.below-slogan-container,
+.join-us,
+.address {
   display: flex;
 }
 .cards__item:not(:last-child) {
@@ -308,7 +310,7 @@ h1 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.footer-list {
+.address__list {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
@@ -324,21 +326,20 @@ figure {
   justify-content: center;
   align-items: center;
 }
-.street-footer {
+.address__item--street {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-.mail-footer {
+.address__item--email {
   margin-bottom: 9px;
 }
-.tel-footer {
+.address__item--phone {
   margin-bottom: 60px;
 }
 .page-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* ----------------------------HOMEWORK4------------------------------------ */
 .cards__icon {
   width: 270px;
   height: 120px;
@@ -359,7 +360,7 @@ figure {
   align-items: center;
   justify-content: center;
 }
-.social-media-icon-ft {
+.join-us__link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -369,8 +370,8 @@ figure {
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
 }
-.social-media-icon-ft:hover,
-.social-media-icon-ft:focus {
+.join-us__link:hover,
+.join-us__link:focus {
   background-color: var(--blue-color);
   cursor: pointer;
   transition-property: fill, color, border, background-color;
@@ -407,7 +408,7 @@ figure {
   padding: 0;
   margin-bottom: 30px;
 }
-.above-footer-icon-bg {
+.clients__logo-field {
   width: 170px;
   height: 92px;
   border-radius: 4px;
@@ -416,7 +417,7 @@ figure {
   align-items: center;
   justify-content: center;
 }
-.above-footer-icon-bg-list {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,22 +427,19 @@ figure {
   list-style: none;
   margin-bottom: 0;
 }
-.above-footer {
+.clients {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.join-us {
-  display: flex;
-}
-.footer-div-list-title {
+.join-us__list {
   display: flex;
   list-style: none;
   margin-left: 70px;
   padding: 0;
 }
-.footer-div-list {
+.join-us__list-icons {
   display: flex;
   list-style: none;
   gap: 10px;
@@ -449,10 +447,7 @@ figure {
   margin-left: 70px;
   padding: 0;
 }
-.div-footer {
-  display: flex;
-}
-.join-us-title {
+.join-us__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -462,14 +457,14 @@ figure {
   margin-top: 72px;
 }
 .team-social-media__icon,
-.client-logo {
+.clients__logo-icon {
   fill: #afb1b8;
 }
-.social-media-icons-ft {
+.join-us-social-media__icon {
   fill: var(--white-color);
 }
-.above-footer-icon-bg:hover,
-.above-footer-icon-bg:focus {
+.clients__logo-field:hover,
+.clients__logo-field:focus {
   color: var(--blue-color);
   cursor: pointer;
   border-color: var(--blue-color);
@@ -477,8 +472,8 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-logo:hover,
-.client-logo:focus {
+.clients__logo-icon:hover,
+.clients__logo-icon:focus {
   fill: var(--blue-color);
   cursor: pointer;
   border-color: var(--blue-color);
@@ -486,8 +481,6 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ----------------------------HOMEWORK5-------------------------------------------- */
 .menu__item--site-underline {
   position: relative;
 }
@@ -501,10 +494,9 @@ figure {
   top: 47px;
   border-radius: 2px;
 }
-.menu__link--contact:hover .menu__icon--blue-acent {
+.menu__link--contact:hover .menu__icon--blue-accent {
   fill: var(--blue-color);
 }
-
 .backdrop {
   position: fixed;
   display: flex;
@@ -572,24 +564,21 @@ figure {
   margin-top: 27px;
   padding: 0;
 }
-
-/* ----------------------------HOMEWORK6-------------------------------------------- */
-
-.newsletter-list,
-.newsletter-list-2 {
+.newsletter__list,
+.newsletter__list-form {
   list-style: none;
   display: flex;
   padding: 0;
 }
-.newsletter-list {
+.newsletter__list {
   margin-bottom: 0;
   margin-left: 78px;
 }
-.newsletter-list-2 {
+.newsletter__list-form {
   margin-top: 20px;
   margin-left: 78px;
 }
-.newsletter-title {
+.newsletter__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -603,7 +592,7 @@ figure {
   padding: 0;
   margin: 0 auto;
 }
-.email-input {
+.newsletter__form-content {
   background-color: transparent;
   box-sizing: border-box;
   width: 358px;
@@ -617,7 +606,7 @@ figure {
   line-height: 20px;
   color: rgb(255, 255, 255, 0.8);
 }
-.subscribe-button {
+.newsletter__button {
   width: 200px;
   height: 50px;
   background: var(--blue-color);
@@ -628,7 +617,7 @@ figure {
   padding: 0;
   cursor: pointer;
 }
-.newsletter-button-title {
+.newsletter__button-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -638,13 +627,13 @@ figure {
   margin-right: 24px;
   padding: 0;
 }
-.icon-send {
+.newsletter__icon {
   padding: 0;
   position: relative;
   top: 6px;
   right: 13px;
 }
-.email-input:focus-within {
+.newsletter__form-content:focus-within {
   outline: none;
 }
 .modal__list {
@@ -828,49 +817,32 @@ input[type="checkbox"]:checked + label:before {
   background-color: var(--blue-color);
   border: none;
 }
-
-/* -Portfolio-------------------------------------------------------- */
-
-.buttons-list {
+.portfolio-navigation__list {
   display: flex;
   padding: 0;
   margin-bottom: 50px;
   margin-top: 0;
 }
-.buttons:not(:last-child) {
+.portfolio-navigation__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-picture-title {
-  margin-top: 20px;
-  margin-left: 24px;
-}
-.portfolio-picture-description {
-  margin-top: 4px;
-  margin-bottom: 20px;
-}
-.portfolio-pictures {
+.portfolio-cards__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
   margin-top: 0;
 }
-.pictures-three {
+.portfolio-cards__item--border {
   border-bottom: 1px solid #eeeeee;
 }
-.portfolio-nav {
+.portfolio-navigation {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.button {
-  padding: 6px 22px;
-}
-
-/* ----------------------------HOMEWORK4-------------------------------------------- */
-
-.portfolio-pictures-hover:hover,
-.portfolio-pictures-hover:focus {
+.portfolio-cards__item:hover,
+.portfolio-cards__item:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -878,22 +850,19 @@ input[type="checkbox"]:checked + label:before {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-pictures-hover {
+.portfolio-cards__item {
   cursor: pointer;
   transform: fill, color, border, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ----------------------------HOMEWORK5-------------------------------------------- */
-
-.portfolio-pictures-box {
+.portfolio-cards__setup {
   width: 370px;
   height: 294px;
   position: relative;
   overflow: hidden;
 }
-.pictures-portfolio-overlay {
+.portfolio-cards__overlay {
   position: absolute;
   display: flex;
   top: 100%;
@@ -906,14 +875,14 @@ input[type="checkbox"]:checked + label:before {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pictures-portfolio-overlay-text {
+.portfolio-cards__overlay-content {
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.portfolio-pictures-hover:hover .pictures-portfolio-overlay {
+.portfolio-cards__item:hover .portfolio-cards__overlay {
   transform: translate(0%, -100%);
   transition-property: fill, color, border, background-color, transform;
   transition-duration: 250ms;
