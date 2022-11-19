@@ -18,43 +18,54 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <div class="content">
-            <a class="web-logo" href="#"
-              ><span class="web-blue">Web</span>Studio</a
+        <nav class="navigation">
+          <div class="menu">
+            <a class="logo" href="#"
+              ><span class="logo--blue-accent">Web</span>Studio</a
             >
-            <ul class="header-content">
-              <li class="header-display">
-                <a class="header-nav agencja" href="index.html">Agencja</a>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Agencja</a>
               </li>
-              <li class="header-display">
+              <li class="menu__item">
                 <div class="blue-line-current-site-two"></div>
-                <a class="header-nav portfolio" href="portfolio.html"
-                  ><span class="blue-current-site site-underline"
+                <a class="menu__link" href="portfolio.html"
+                  ><span
+                    class="menu__item--current-site-blue-accent menu__item--site-underline"
                     >Portfolio</span
                   ></a
                 >
               </li>
-              <li class="header-display">
-                <a class="header-nav kontakt" href="#kontakt">Kontakt</a>
+              <li class="menu__item">
+                <a class="menu__link" href="#kontakt">Kontakt</a>
               </li>
             </ul>
           </div>
         </nav>
-        <ul class="header-content">
-          <li>
-            <a class="header-contact mail" href="mailto:info@devstudio.com"
-              ><svg class="contact-link-icon blue" width="16" height="16">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a
+              class="menu__link--contact menu__link--email"
+              href="mailto:info@devstudio.com"
+              ><svg
+                class="menu__icon menu__icon--blue-acent"
+                width="16"
+                height="16"
+              >
                 <use href="./images/icons.svg/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="header-contact tel" href="tel:48111111111"
-              ><svg class="contact-link-icon blue" width="16" height="16">
+            <a class="menu__link--contact tel" href="tel:48111111111"
+              ><svg
+                class="menu__icon menu__icon--blue-acent"
+                width="16"
+                height="16"
+              >
                 <use
                   href="./images/icons.svg/icons.svg#icon-smartphone-1"
                 ></use>
@@ -65,8 +76,8 @@
         </ul>
       </div>
     </header>
-    <main class="main-content">
-      <section class="section">
+    <main class="main">
+      <section class="page-section">
         <div class="portfolio-nav container">
           <ul class="buttons-list">
             <li class="buttons">
@@ -330,7 +341,7 @@
             <ul class="footer-list">
               <li>
                 <a class="web-logo" href="#"
-                  ><span class="web-blue">Web</span
+                  ><span class="logo--blue-accent">Web</span
                   ><span class="studio-white">Studio</span></a
                 >
               </li>

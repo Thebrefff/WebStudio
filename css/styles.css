@@ -13,70 +13,78 @@ body {
   --white-color: #ffffff;
   --contact-color: #757575;
 }
-.header-content {
+.menu__list {
   font-weight: 500;
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin-bottom: 32px;
+  margin-top: 32px;
 }
-.web-logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   color: inherit;
+  margin-right: 93px;
+  padding: 0;
 }
-.web-blue {
+.logo--blue-accent,
+.menu__item--current-site-blue-accent,
+.modal__link {
   color: var(--blue-color);
 }
 .studio-white {
   color: var(--white-color);
 }
-.header-nav {
+.menu__link {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
 }
-.contact-link-icon {
+.menu__icon {
   fill: var(--contact-color);
 }
-.blue:hover,
-.blue:focus {
+.menu__icon--blue-acent:hover,
+.menu__icon--blue-acent:focus {
   fill: var(--blue-color);
   color: var(--blue-color);
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav:hover,
-.header-contact:hover,
+.menu__link:hover,
+.menu__link--contact:hover,
 .contact-footer:hover,
-.slogan-button:hover,
-.header-nav:focus,
-.header-contact:focus,
+.slogan__button:hover,
+.menu__link:focus,
+.menu__link--contact:focus,
 .contact-footer:focus,
-.slogan-button:focus {
+.slogan__button:focus {
   color: var(--blue-color);
   fill: var(--blue-color);
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav,
-.header-contact,
+.menu__link,
+.menu__link--contact,
 .contact-footer,
-.slogan-button,
-.blue,
+.slogan__button,
+.menu__icon--blue-acent,
 .social-media-icon-ft,
-.social-media-icon,
-.social-media-icons,
+.team-social-media__link,
+.team-social-media__icon,
 .above-footer-icon-bg,
 .client-logo {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, color, border, background-color;
 }
-.header-contact {
+.menu__link--contact {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -88,8 +96,16 @@ body {
 }
 .slogan {
   background: var(--brand-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/slogan.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.slogan-content {
+.slogan__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -98,14 +114,16 @@ body {
   text-transform: uppercase;
   color: var(--white-color);
 }
-.slogan-button {
+.slogan__button {
   background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  margin-bottom: 200px;
+  padding: 10px 41px 10px 42px;
 }
-.slogan-button-text {
+.slogan__button-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -113,41 +131,51 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-.main-content {
+.main {
   font-weight: 700;
 }
-.below-slogan {
+.cards__list {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--contact-color);
   list-style: none;
+  display: flex;
+  padding: 0;
+  padding-top: 94px;
 }
-.below-slogan-header {
+.cards__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
+  margin-bottom: 10px;
+  padding-left: 0;
 }
-.middle-content-header-work,
-.middle-content-header-team,
-.above-footer-h2 {
+.page-section__title {
   font-size: 36px;
   line-height: 1.17;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin: 0;
 }
-.middle-content-header-team-section {
+.page-section--team {
   background: var(--grey-background);
 }
-.picture-title {
+.team__item-title {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
 }
-.picture-description {
+.team__item-decription {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: var(--contact-color);
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 .footer {
   background: var(--brand-background);
@@ -213,11 +241,8 @@ body {
 }
 /* Powyżej celowo skróciłem czas do 25ms, zamiast 250ms. Wg mnie powolna zmiana koloru treści z czarnej na białą w buttonach portfolio źle wygląda */
 
-.blue-current-site {
-  color: var(--blue-color);
-}
-.middle-content-pictures-one,
-.middle-content-pictures-two,
+.what-we-do__list,
+.team__list,
 .footer-list,
 .buttons-list,
 .portfolio-pictures {
@@ -237,79 +262,38 @@ body {
 header {
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-.header-content {
-  display: flex;
-  padding: 0;
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
-.content {
+.menu {
   display: flex;
   align-items: center;
 }
-.web-logo {
-  margin-right: 93px;
-  padding: 0;
-}
-.header-display {
+.menu__item {
   margin-left: 46px;
 }
-.mail {
+.menu__link--email {
   margin-right: 50px;
 }
 h1 {
   padding-top: 200px;
   margin-bottom: 30px;
 }
-.slogan {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.slogan-button {
-  margin-bottom: 200px;
-  padding: 10px 41px 10px 42px;
-}
 .below-slogan-container {
   display: flex;
 }
-.below-slogan {
-  display: flex;
-  padding: 0;
-  padding-top: 94px;
-}
-.below-slogan-header {
-  margin-bottom: 10px;
-  padding-left: 0;
-}
-.bs:not(:last-child) {
+.cards__item:not(:last-child) {
   margin-right: 30px;
 }
-.middle-content-hw,
-.middle-content-ht {
+.linear-container {
   display: flex;
   flex-direction: column;
 }
-.middle-content-header-work,
-.middle-content-header-team,
-.above-footer-h2 {
-  display: flex;
-  justify-content: center;
-}
-.middle-content-pictures-one {
+.what-we-do__list {
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
   padding: 0;
   margin-top: 50px;
 }
-.middle-content-header-team,
-.middle-content-header-work,
-.above-footer-h2 {
-  margin-bottom: 50px;
-  margin: 0;
-}
-.middle-content-pictures-two {
+.team__list {
   padding-top: 0;
   margin-top: 0;
   display: flex;
@@ -317,7 +301,7 @@ h1 {
   gap: 30px;
   padding-left: 0;
 }
-.pictures-two {
+.team__item {
   margin-top: 50px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -333,20 +317,12 @@ h1 {
 figure {
   margin: 0;
 }
-.picture-title,
-.picture-description {
+.team__item-title,
+.team__item-decription {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-}
-.picture-title {
-  margin-top: 30px;
-}
-.picture-description {
-  margin-top: 10px;
-  margin-bottom: 16px;
 }
 .street-footer {
   margin-top: 20px;
@@ -358,19 +334,12 @@ figure {
 .tel-footer {
   margin-bottom: 60px;
 }
-.section {
+.page-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 /* ----------------------------HOMEWORK4------------------------------------ */
-.slogan {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
-    url("../images/slogan.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.bs-icon-bg {
+.cards__icon {
   width: 270px;
   height: 120px;
   background-color: var(--grey-background);
@@ -381,7 +350,7 @@ figure {
   justify-content: center;
   margin-bottom: 30px;
 }
-.social-media-icon {
+.team-social-media__link {
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -408,28 +377,28 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-icon:hover,
-.social-media-icon:focus {
+.team-social-media__link:hover,
+.team-social-media__link:focus {
   background: var(--blue-color);
   cursor: pointer;
   transition-property: fill, color, border, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-icons:hover,
-.social-media-icons:focus {
+.team-social-media__icon:hover,
+.team-social-media__icon:focus {
   background: var(--blue-color);
   transition-duration: 250ms;
   transition-property: fill, color, border, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-icon:hover .social-media-icons {
+.team-social-media__link:hover .team-social-media__icon {
   fill: var(--white-color);
   transition-property: fill, color, border, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social {
+.team-social-media__list {
   display: flex;
   list-style: none;
   margin-bottom: 30px;
@@ -492,7 +461,7 @@ figure {
   color: var(--white-color);
   margin-top: 72px;
 }
-.social-media-icons,
+.team-social-media__icon,
 .client-logo {
   fill: #afb1b8;
 }
@@ -519,10 +488,10 @@ figure {
 }
 
 /* ----------------------------HOMEWORK5-------------------------------------------- */
-.site-underline {
+.menu__item--site-underline {
   position: relative;
 }
-.site-underline::after {
+.menu__item--site-underline::after {
   position: absolute;
   left: 0;
   content: "";
@@ -532,7 +501,7 @@ figure {
   top: 47px;
   border-radius: 2px;
 }
-.header-contact:hover .blue {
+.menu__link--contact:hover .menu__icon--blue-acent {
   fill: var(--blue-color);
 }
 
@@ -559,7 +528,7 @@ figure {
   margin: auto;
   position: relative;
 }
-.modal-btn {
+.modal__button-close {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -570,7 +539,7 @@ figure {
   top: 8px;
   right: 8px;
 }
-.x-sign {
+.modal__button-close-icon {
   padding: 0;
   top: 5px;
   left: 5px;
@@ -584,7 +553,7 @@ figure {
   visibility: initial;
   pointer-events: fill;
 }
-.pictures-one-layout {
+.what-we-do__item-layout {
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -592,7 +561,7 @@ figure {
   z-index: 2;
   top: 1522px;
 }
-.layout-p-one {
+.what-we-do__item-layout-title {
   text-transform: uppercase;
   color: var(--white-color);
   font-weight: 700;
@@ -678,7 +647,7 @@ figure {
 .email-input:focus-within {
   outline: none;
 }
-.modal-list {
+.modal__list {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -686,7 +655,7 @@ figure {
   margin-top: 40px;
   padding: 0;
 }
-.modal-item-1 {
+.modal__title {
   width: 448px;
   height: 23px;
   left: 576px;
@@ -698,7 +667,7 @@ figure {
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-.modal-item-2 {
+.modal__form-content {
   height: 40px;
   width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -706,33 +675,37 @@ figure {
   padding-left: 42px;
   margin: 0 auto;
   font-size: smaller;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
 }
-.modal-phone:has(input:focus) .logo-username {
+.modal__item--username:has(input:focus) .modal__icon--username {
   fill: var(--blue-color);
 }
-.modal-list-items:has(input:focus) .logo-phone {
+.modal__item:has(input:focus) .modal__icon--phone {
   fill: var(--blue-color);
 }
-.for-focus:has(input:focus) .logo-email {
+.modal__item--email:has(input:focus) .modal__icon--email {
   fill: var(--blue-color);
 }
-.modal-logo {
+.modal__icon {
   position: relative;
   left: 15px;
   top: 34px;
   z-index: 2;
 }
-.modal-form {
+.modal__form {
   width: 448px;
   margin: 0 auto;
 }
-.modal-phone {
+.modal__item--username {
   margin-top: 10px;
 }
-.modal-list-items {
+.modal__item {
   margin-top: 6px;
 }
-.modal-form-title {
+.modal__form-title {
   height: 14px;
   font-weight: 400;
   font-size: 12px;
@@ -740,21 +713,21 @@ figure {
   letter-spacing: 0.01em;
   color: var(--contact-color);
 }
-.name-phone-title {
+.modal__form-title--name-phone {
   margin-left: -22px;
   bottom: 2px;
   position: relative;
 }
-.email-title {
+.modal__form-title--email {
   margin-left: -28px;
   bottom: 2px;
   position: relative;
 }
-.comment-title {
+.modal__form-title--comment {
   bottom: 2px;
   position: relative;
 }
-.textarea {
+.modal__form-textarea {
   resize: none;
   width: 448px;
   height: 120px;
@@ -764,22 +737,19 @@ figure {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
 }
-.textarea::placeholder {
+.modal__form-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.textarea,
-.modal-item-2 {
-  transition-property: outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: 1px solid rgba(33, 33, 33, 0.2);
-}
-.rules {
+.modal__form-regulations-policy {
   width: 395px;
   height: 24px;
   font-weight: 400;
@@ -788,14 +758,11 @@ figure {
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
-.rules-link {
-  color: var(--blue-color);
-}
-.rules-p {
+.modal__item-regulations-policy {
   margin-top: 12px;
   padding: 0;
 }
-.send-button {
+.modal__button {
   width: 200px;
   height: 50px;
   background: var(--blue-color);
@@ -803,8 +770,6 @@ figure {
   border-radius: 4px;
   color: var(--white-color);
   letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
   border: none;
   font-weight: 700;
   font-size: 16px;
@@ -814,14 +779,14 @@ figure {
   margin-bottom: 50px;
   padding: 0;
 }
-.modal-item-2:focus,
-.textarea:focus {
+.modal__form-content:focus,
+.modal__form-textarea:focus {
   outline: 1px solid var(--blue-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: outline;
 }
-.checkbox-sign {
+.modal__icon--checkbox {
   position: absolute;
   width: 13px;
   height: 13px;
