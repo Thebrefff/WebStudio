@@ -200,6 +200,16 @@
   visibility: initial;
   pointer-events: fill;
 }
+input[type="checkbox"] {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  width: 420px;
+  height: 30px;
+  bottom: 120px;
+  cursor: pointer;
+  z-index: 2;
+}
 input[type="checkbox"] + label {
   position: relative;
   padding-left: 23px;
