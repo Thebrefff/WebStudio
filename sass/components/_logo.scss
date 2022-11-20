@@ -1,0 +1,17 @@
+.logo {
+  font-family: var(--font);
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 93px;
+  padding: 0;
+
+  &--blue-accent {
+    color: var(--blue-color);
+  }
+
+  &--white-accent {
+    color: var(--white-color);
+  }
+}

@@ -1,0 +1,50 @@
+.slogan {
+  background: var(--brand-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/slogan.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
+}
+.slogan__button {
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 200px;
+  padding: 10px 41px 10px 42px;
+  transition-duration: var(--transition-250);
+  transition-timing-function: var(--transition-cubic);
+  transition-property: fill, color, border, background-color;
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    transition-property: fill, color;
+    transition-duration: var(--transition-250);
+    transition-timing-function: var(--transition-cubic);
+  }
+}
+.slogan__button-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}

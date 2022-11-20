@@ -1,0 +1,13 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition-property: fill, color, border, background-color;
+  transition: transform 0.8s ease-out;
+  pointer-events: fill;
+  z-index: 3;
+}

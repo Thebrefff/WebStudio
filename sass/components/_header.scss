@@ -1,0 +1,104 @@
+header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+.menu {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+}
+.menu__link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
+  transition-duration: var(--transition-250);
+  transition-timing-function: var(--transition-cubic);
+  transition-property: fill, color, border, background-color;
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    transition-property: fill, color;
+    transition-duration: var(--transition-250);
+    transition-timing-function: var(--transition-cubic);
+  }
+
+  &--email {
+    margin-right: 50px;
+  }
+}
+.menu__link--contact {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition-duration: var(--transition-250);
+  transition-timing-function: var(--transition-cubic);
+  transition-property: fill, color, border, background-color;
+
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    transition-property: fill, color;
+    transition-duration: var(--transition-250);
+    transition-timing-function: var(--transition-cubic);
+  }
+}
+.menu__icon {
+  fill: var(--contact-color);
+
+  &--blue-accent {
+    transition-duration: var(--transition-250);
+    transition-timing-function: var(--transition-cubic);
+    transition-property: fill, color, border, background-color;
+
+    &:hover,
+    &:focus {
+      fill: var(--blue-color);
+      color: var(--blue-color);
+      transition-property: fill, color;
+      transition-duration: var(--transition-250);
+      transition-timing-function: var(--transition-cubic);
+    }
+  }
+}
+.menu__link--contact:hover .menu__icon--blue-accent {
+  fill: var(--blue-color);
+}
+.menu__item {
+  margin-left: 46px;
+
+  &--site-underline {
+    position: relative;
+  }
+
+  &--site-underline::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 55px;
+    height: 4px;
+    background: var(--blue-color);
+    top: 47px;
+    border-radius: 2px;
+  }
+
+  &--current-site-blue-accent {
+    color: var(--blue-color);
+  }
+}
