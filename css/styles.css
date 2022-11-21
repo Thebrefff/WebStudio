@@ -39,7 +39,7 @@ body {
   color: var(--blue-color);
 }
 .logo--white-accent,
-.address__item--street {
+.address__item-street {
   color: var(--white-color);
 }
 .menu__link {
@@ -89,11 +89,7 @@ body {
   transition-property: fill, color, border, background-color;
 }
 .menu__link--contact {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--contact-color);
-  text-decoration: none;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -328,14 +324,14 @@ figure {
   justify-content: center;
   align-items: center;
 }
-.address__item--street {
+.address__item-street {
   margin-top: 20px;
   margin-bottom: 9px;
 }
-.address__item--email {
+.address__item-email {
   margin-bottom: 9px;
 }
-.address__item--phone {
+.address__item-phone {
   margin-bottom: 60px;
 }
 .page-section {

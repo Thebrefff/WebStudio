@@ -1143,15 +1143,15 @@ input[type="checkbox"]:checked + label:before {
   padding-top: 60px;
   padding-left: 0;
 }
-.address__item--street {
+.address__item-street {
   margin-top: 20px;
   margin-bottom: 9px;
   color: var(--white-color);
 }
-.address__item--email {
+.address__item-email {
   margin-bottom: 9px;
 }
-.address__item--phone {
+.address__item-phone {
   margin-bottom: 60px;
 }
 

@@ -38,17 +38,10 @@ header {
   }
 }
 .menu__link--contact {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--contact-color);
-  text-decoration: none;
   display: flex;
   gap: 10px;
   align-items: center;
-  transition-duration: var(--transition-250);
-  transition-timing-function: var(--transition-cubic);
-  transition-property: fill, color, border, background-color;
 
   &:hover,
   &:focus {
