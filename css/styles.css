@@ -831,7 +831,7 @@ input[type="checkbox"]:checked + label:before {
   padding: 0;
   margin-top: 0;
 }
-.portfolio-cards__item--border {
+.portfolio-cards__figure {
   border-bottom: 1px solid #eeeeee;
 }
 .portfolio-navigation {

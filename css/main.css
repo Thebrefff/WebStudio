@@ -1036,7 +1036,7 @@ input[type="checkbox"]:checked + label:before {
   transition-timing-function: var(--transition-cubic);
 }
 
-.portfolio-cards__item--border {
+.portfolio-cards__figure {
   border-bottom: 1px solid #eeeeee;
 }
 

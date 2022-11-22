@@ -22,9 +22,6 @@
     transition-timing-function: var(--transition-cubic);
   }
 }
-.portfolio-cards__item--border {
-  border-bottom: 1px solid #eeeeee;
-}
 .portfolio-cards__item-title {
   font-weight: 700;
   font-size: 18px;
@@ -42,6 +39,9 @@
   color: var(--contact-color);
   margin-top: 4px;
   margin-bottom: 20px;
+}
+.portfolio-cards__figure {
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-cards__setup {
   width: 370px;
