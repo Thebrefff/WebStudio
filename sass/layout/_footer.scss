@@ -1,0 +1,101 @@
+.footer {
+  &__container {
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+  & {
+    padding: 60px 0;
+
+    background-color: #2f303a;
+  }
+  &__adress {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+      margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 80px;
+      margin-bottom: 0px;
+      margin-left: 0;
+    }
+  }
+  &__addres--position {
+    margin-top: 20px;
+  }
+  &__list {
+    margin-top: 8px;
+    @extend %reset-list;
+    @media screen and (min-width: 1200px) {
+      margin-top: 9px;
+    }
+  }
+  &__item:not(:first-child) {
+    margin-top: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 9px;
+    }
+  }
+  &__social {
+    margin-right: auto;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+  &__social .social__svg {
+    fill: var(--logo-footer);
+  }
+  &__mail {
+    color: var(--logo-footer);
+    padding: 0 16px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color: #2f303a;
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+    }
+  }
+  &__label {
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      margin-right: 12px;
+    }
+  }
+  &__btn-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+
+    fill: currentColor;
+  }
+  &__forms {
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+}

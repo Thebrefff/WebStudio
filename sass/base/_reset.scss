@@ -1,0 +1,16 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.work__img,
+.teams__img,
+.portfolio-work__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

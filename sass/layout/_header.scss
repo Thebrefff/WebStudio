@@ -1,0 +1,87 @@
+.header {
+  &__logo {
+    padding: 16px 0;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      padding: 26px 0;
+      margin-right: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      padding: 25px 0;
+    }
+  }
+
+  &__link--position {
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: inline-flex;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin: 0;
+    }
+  }
+
+  &__list {
+    @extend %reset-list;
+
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      margin-left: 84px;
+
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin-left: auto;
+      gap: 30px;
+    }
+  }
+
+  &__icon {
+    @media screen and (min-width: 768px) {
+      margin-right: 6px;
+      width: 14px;
+      height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &__icon-tel {
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 10px;
+      height: 16px;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+  & {
+    border-bottom: 1px solid #ececec;
+  }
+}

@@ -18,446 +18,731 @@
     />
   </head>
   <body>
+    <!-- header-section -->
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <div class="menu">
-            <a class="logo" href="#"
-              ><span class="logo--blue-accent">Web</span>Studio</a
-            >
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">Agencja</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="portfolio.html"
-                  ><span
-                    class="menu__item--current-site-blue-accent menu__item--site-underline"
-                    >Portfolio</span
-                  ></a
-                >
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <ul class="menu__list">
-          <li class="menu__item--details">
-            <a
-              class="menu__link menu__link--contact menu__link--email"
-              href="mailto:info@devstudio.com"
-              ><svg
-                class="menu__icon menu__icon--blue-accent"
-                width="16"
-                height="16"
+      <!-- mobile-menu -->
+      <div class="mobile-menu__overley" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn" type="button" data-menu-close>
+            <svg class="mobile-menu__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav mobile-menu__link-nav-accent" href="./index.html"
+                >Студия</a
               >
-                <use href="./images/icons.svg/icons.svg#icon-envelope-1"></use>
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a class="mobile-menu__link-contact-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__list-contact-mailto">
+              <a class="mobile-menu__link-contact-mailto" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container header__container">
+        <a class="header__link-logo header__logo" href="./index.html"
+          >Web<span class="header__logo-studio">Studio</span></a
+        >
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--position" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--currentp nav__link--position" href="./portfolio.html"
+                ><span class="nav__title">Портфолио</span></a
+              >
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--position" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <button class="nav__btn" type="button" data-menu-open>
+            <svg class="nav__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link header__link--position" href="mailto:info@devstudio.com">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="menu__item--details">
-            <a class="menu__link menu__link--contact" href="tel:48111111111"
-              ><svg
-                class="menu__icon menu__icon--blue-accent"
-                width="16"
-                height="16"
-              >
-                <use
-                  href="./images/icons.svg/icons.svg#icon-smartphone-1"
-                ></use>
+          <li class="header__item">
+            <a class="header__link header__link--position" href="tel:+380961111111">
+              <svg class="header__icon header__icon-tel" width="10" height="16">
+                <use href="./images/icons.svg#icon-vector"></use>
               </svg>
-              +48 111 111 111</a
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
-    <main class="main">
-      <section class="page-section">
-        <div class="portfolio-navigation container">
-          <ul class="portfolio-navigation__list">
-            <li class="portfolio-navigation__item">
-              <button type="button" class="portfolio-navigation__button">
-                <span class="portfolio-navigation__button-title"
-                  >Wszystkie</span
-                >
-              </button>
+    <main>
+      <!-- portfolio-section -->
+      <section class="portfolio">
+        <div class="container">
+          <ul class="portfolio__list portfolio__list-btn">
+            <li class="portfolio__item portfolio__item-btn">
+              <button class="portfolio__btn portfolio__btn-all" type="button">Все</button>
             </li>
-            <li class="portfolio-navigation__item">
-              <button type="button" class="portfolio-navigation__button">
-                <span class="portfolio-navigation__button-title">Strony</span>
-              </button>
+            <li class="portfolio__item portfolio__item-btn">
+              <button class="portfolio__btn portfolio__btn-web" type="button">Веб-сайты</button>
             </li>
-            <li class="portfolio-navigation__item">
-              <button type="button" class="portfolio-navigation__button">
-                <span class="portfolio-navigation__button-title"
-                  >Aplikacje</span
-                >
-              </button>
+            <li class="portfolio__item portfolio__item-btn portfolio__item--btn-app">
+              <button class="portfolio__btn portfolio__btn-app" type="button">Приложения</button>
             </li>
-            <li class="portfolio-navigation__item">
-              <button type="button" class="portfolio-navigation__button">
-                <span class="portfolio-navigation__button-title">Dizajn</span>
-              </button>
+            <li class="portfolio__item portfolio__item-btn">
+              <button class="portfolio__btn portfolio__btn-des" type="button">Дизайн</button>
             </li>
-            <li class="portfolio-navigation__item">
-              <button type="button" class="portfolio-navigation__button">
-                <span class="portfolio-navigation__button-title"
-                  >Marketing</span
-                >
-              </button>
+            <li class="portfolio__item portfolio__item-btn portfolio__item--btn-mar">
+              <button class="portfolio__btn portfolio__btn-mar" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <div class="container">
-          <ul class="portfolio-cards__list">
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
-                  <img
-                    src="./images/technocrack.jpg"
-                    alt="wyświetlona strona internetowa na laptopie"
-                    width="370"
-                    height="294"
-                  />
-                </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Technocrack
-                  <p class="portfolio-cards__item-description">
-                    Strona internetowa
+          <ul class="portfolio-work__list">
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img5-lg@1x.jpg 1x,
+                        ./images/portfolio/img1-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1-md@1x.jpg 1x,
+                        ./images/portfolio/img1-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img1-sm@1x.jpg 1x,
+                        ./images/portfolio/img1-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/neworlean.jpg"
-                    alt="dwóch koszykarzy podczas meczu"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
                 </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Grafika New Orleans vs Golden Star
-                  <p class="portfolio-cards__item-description">Design</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/seafood.jpg"
-                    alt="logo restauracji"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
+                <div class="portfolio-work__border portfolio-work__border--position">
+                  <h3 class="portfolio-work__title">Технокряк</h3>
+                  <p class="portfolio-work__desc">Веб-сайт</p>
                 </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Restauracja Seafood
-                  <p class="portfolio-cards__item-description">Aplikacja</p>
-                </figcaption>
-              </figure>
+              </a>
             </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/prime.jpg"
-                    alt="słuchawki nauszne"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
-                </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Projekt Prime
-                  <p class="portfolio-cards__item-description">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="dwa pudełka"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
-                </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Projekt Boxes
-                  <p class="portfolio-cards__item-description">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/borders.jpg"
-                    alt="wyświetlona strona
-              internetowa na monitorze"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
-                </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Inspiration has no Borders
-                  <p class="portfolio-cards__item-description">
-                    Strona internetowa
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img2-lg@1x.jpg 1x,
+                        ./images/portfolio/img2-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img2-md@1x.jpg 1x,
+                        ./images/portfolio/img2-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img2-sm@1x.jpg 1x,
+                        ./images/portfolio/img2-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
                   </p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/edition.jpg"
-                    alt="Magazyn (gazeta)"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
                 </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Magazyn Limited Edition
-                  <p class="portfolio-cards__item-description">Design</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/lab.jpg"
-                    alt="Etykieta"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="portfolio-work__desc">Дизайн</p>
                 </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Projekt LAB
-                  <p class="portfolio-cards__item-description">Marketing</p>
-                </figcaption>
-              </figure>
+              </a>
             </li>
-            <li class="portfolio-cards__item">
-              <figure class="portfolio-cards__figure">
-                <div class="portfolio-cards__setup">
-                  <img
-                    src="./images/business.jpg"
-                    alt="osoba pracująca na laptopie"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="portfolio-cards__overlay">
-                    <p class="portfolio-cards__overlay-content">
-                      Technocrack jest popularną platformą wykorzystywaną do
-                      rozpowszechniania koronawirusa. Firmy wykorzystują tę
-                      platformę do celów szpiegowskich i ataków na
-                      niezabezpieczone serwery konkurencji
-                    </p>
-                  </div>
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img3-lg@1x.jpg 1x,
+                        ./images/portfolio/img3-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img3-md@1x.jpg 1x,
+                        ./images/portfolio/img3-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img3-sm@1x.jpg 1x,
+                        ./images/portfolio/img3-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
                 </div>
-                <figcaption class="portfolio-cards__item-title">
-                  Growing Business
-                  <p class="portfolio-cards__item-description">Aplikacja</p>
-                </figcaption>
-              </figure>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Ресторан Seafood</h3>
+                  <p class="portfolio-work__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img4-lg@1x.jpg 1x,
+                        ./images/portfolio/img4-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img4-md@1x.jpg 1x,
+                        ./images/portfolio/img4-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img4-sm@1x.jpg 1x,
+                        ./images/portfolio/img4-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img1.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Проект Prime</h3>
+                  <p class="portfolio-work__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img5-lg@1x.jpg 1x,
+                        ./images/portfolio/img5-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img5-md@1x.jpg 1x,
+                        ./images/portfolio/img5-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img5-sm@1x.jpg 1x,
+                        ./images/portfolio/img5-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img5.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Проект Boxes</h3>
+                  <p class="portfolio-work__desc">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item">
+              <a
+                class="link portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img6-lg@1x.jpg 1x,
+                        ./images/portfolio/img6-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img6-md@1x.jpg 1x,
+                        ./images/portfolio/img6-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img6-sm@1x.jpg 1x,
+                        ./images/portfolio/img6-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img6.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Inspiration has no Borders</h3>
+                  <p class="portfolio-work__desc">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item">
+              <a
+                class="portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img7-lg@1x.jpg 1x,
+                        ./images/portfolio/img7-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img7-md@1x.jpg 1x,
+                        ./images/portfolio/img7-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img7-sm@1x.jpg 1x,
+                        ./images/portfolio/img7-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img7.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Издание Limited Edition</h3>
+                  <p class="portfolio-work__desc">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item item">
+              <a
+                class="link portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img8-lg@1x.jpg 1x,
+                        ./images/portfolio/img8-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img8-md@1x.jpg 1x,
+                        ./images/portfolio/img8-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img8-sm@1x.jpg 1x,
+                        ./images/portfolio/img8-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img8.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Проект LAB</h3>
+                  <p class="portfolio-work__desc">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-work__item item">
+              <a
+                class="link portfolio-work__link"
+                href=""
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+              >
+                <div class="portfolio-work__thumb">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img9-lg@1x.jpg 1x,
+                        ./images/portfolio/img9-lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img9-md@1x.jpg 1x,
+                        ./images/portfolio/img9-md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img9-sm@1x.jpg 1x,
+                        ./images/portfolio/img9-sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-work__img"
+                      src="./images/portfolio/img9.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+                  <p class="portfolio-work__overley">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="portfolio-work__border">
+                  <h3 class="portfolio-work__title">Growing Business</h3>
+                  <p class="portfolio-work__desc">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- footer-section -->
     <footer class="footer">
-      <div id="kontakt" class="container">
-        <address class="address">
-          <ul class="address__list">
-            <li class="address__item">
-              <a class="logo" href="#"
-                ><span class="logo--blue-accent">Web</span
-                ><span class="logo--white-accent">Studio</span></a
-              >
+      <div class="container footer__container">
+        <div class="footer__adress">
+          <a class="footer__link-logo footer__logo" href="./index.html"
+            >Web<span class="footer__logo-studio">Studio</span></a
+          >
+          <address class="footer__addres footer__addres--position">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <ul class="footer__list" id="contacts">
+            <li class="footer__item">
+              <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="address__item-street">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </li>
-            <li class="address__item-email">
-              <a class="address__link" href="mailto:info@devstudio.com"
-                ><span class="address__link--underline"
-                  >info@devstudio.com</span
-                ></a
-              >
-            </li>
-            <li class="address__item-phone">
-              <a class="address__link" href="tel:48111111111"
-                >+48 111 111 111</a
-              >
+            <li class="footer__item">
+              <a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-          <div class="join-us_container">
-            <ul class="join-us__list">
-              <li class="join-us__title">DOŁĄCZ DO NAS</li>
-            </ul>
-            <ul class="join-us__list-icons">
-              <li class="join-us__item">
-                <a class="join-us__link" href="#">
-                  <svg
-                    class="join-us-social-media__icon"
-                    width="20"
-                    height="20"
-                  >
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-instagram-2-2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href="#">
-                  <svg
-                    class="join-us-social-media__icon"
-                    width="20"
-                    height="20"
-                  >
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-twitter-1-2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href="#">
-                  <svg
-                    class="join-us-social-media__icon"
-                    width="20"
-                    height="20"
-                  >
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-facebook-1-2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href="#">
-                  <svg
-                    class="join-us-social-media__icon"
-                    width="20"
-                    height="20"
-                  >
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-linkedin-1-2"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="newsletter">
-            <ul class="newsletter__list">
-              <li class="newsletter__title">Zapisz się do newslettera</li>
-            </ul>
-            <ul class="newsletter__list-form">
-              <li class="newsletter__item-form">
-                <form
-                  name="newsletter"
-                  class="newsletter__form"
-                  autocomplete="off"
-                >
-                  <input
-                    type="email"
-                    class="newsletter__form-content"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </form>
-              </li>
-              <li class="newsletter__item-form">
-                <button type="submit" class="newsletter__button">
-                  <span class="newsletter__button-title"> Zapisz się </span>
-                  <svg class="newsletter__icon" width="24" height="24">
-                    <use
-                      href="./images/icons.svg/icons.svg#icon-icon-send"
-                    ></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </address>
+        </div>
+        <div class="footer__social">
+          <h2 class="footer__social-title">присоединяйтесь</h2>
+          <ul class="teams__social">
+            <li class="teams__social-icon">
+              <a
+                class="teams__social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+              >
+                <svg class="social__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="teams__social-icon">
+              <a
+                class="teams__social-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+              >
+                <svg class="social__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="teams__social-icon">
+              <a
+                class="teams__social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+              >
+                <svg class="social__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="teams__social-icon">
+              <a
+                class="teams__social-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+              >
+                <svg class="social__svg" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__forms">
+          <h2 class="footer__forms-title">Подпишитесь на рассылку</h2>
+          <form name="footer__forms">
+            <label class="footer__label">
+              <input
+                class="footer__mail"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer__btn" type="submit">
+              Подписаться
+              <svg class="footer__btn-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

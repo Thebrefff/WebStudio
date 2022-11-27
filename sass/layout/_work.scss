@@ -1,0 +1,30 @@
+.work {
+  & {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+      padding-bottom: 94px;
+    }
+  }
+  &__title--position {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    @extend %reset-list;
+  }
+
+  &__link {
+    position: relative;
+    @extend %reset-link;
+  }
+
+  &__title-work--position {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 27px 82px;
+    width: 370px;
+  }
+}

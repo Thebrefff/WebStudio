@@ -1,0 +1,251 @@
+.header {
+  &__link-logo {
+    @extend %reset-link;
+
+    color: var(--logo-text);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  &__logo-studio {
+    color: var(--logo-header);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  &__link {
+    @extend %reset-link;
+
+    @media screen and (min-width: 768px) {
+      color: var(--slave-text);
+      fill: var(--slave-text);
+      font-weight: 500;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
+  }
+  &__list :hover,
+  &__list :focus {
+    color: var(--logo-text);
+    fill: var(--logo-text);
+  }
+}
+
+.nav {
+  &__title {
+    color: var(--logo-text);
+  }
+  &__link {
+    @extend %reset-link;
+
+    @media screen and (min-width: 768px) {
+      color: var(--primal-text);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+      display: block;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.hero {
+  &__title {
+    color: var(--logo-footer);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
+  }
+}
+
+.features {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    letter-spacing: 0.03em;
+    color: var(--slave-text);
+  }
+}
+
+.work {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__title-work {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.teams {
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+    letter-spacing: 0.03em;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+    }
+  }
+  &__user {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.clients__title {
+  color: var(--primal-text);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: calc(33 / 28);
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+}
+
+.footer {
+  &__link-logo {
+    color: var(--logo-text);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    @extend %reset-link;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+    }
+  }
+  &__logo-studio {
+    color: var(--logo-footer);
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+    }
+  }
+  &__addres {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--logo-footer);
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(250, 250, 250, 0.6);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %reset-link;
+  }
+  &__list :hover,
+  &__list :focus {
+    color: var(--logo-text);
+  }
+  &__social-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--logo-footer);
+  }
+  &__forms-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-footer);
+  }
+}
+
+.portfolio-work {
+  &__title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__desc {
+    color: var(--slave-text);
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
+}

@@ -23,12 +23,28 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
+  // width: 100%;
+  // max-width: 1200px;
   padding: 0 15px;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 h1 {
   padding-top: 200px;
   margin-bottom: 30px;
