@@ -1,25 +1,25 @@
 // utils styles
-@import './utilss/variables';
-@import './utilss/placeholders';
+@import "./utilss/variables";
+@import "./utilss/placeholders";
 
 // base styles
-@import './base/base';
-@import './base/reset';
+@import "./base/base";
+@import "./base/reset";
 
 // components styles
-@import './componentss/buttons';
-@import './componentss/container';
-@import './componentss/modal-window';
-@import './componentss/titles';
+@import "./componentss/buttons";
+@import "./componentss/container";
+@import "./componentss/modal-window";
+@import "./componentss/titles";
 
 // layout styles
-@import './layout/clients';
-@import './layout/features';
-@import './layout/footer';
-@import './layout/header';
-@import './layout/hero';
-@import './layout/portfolio';
-@import './layout/teams';
-@import './layout/work';
-@import './layout/nav';
-@import './layout/mobile-menu';
+@import "./layout/clients";
+@import "./layout/cards";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/slogan";
+@import "./layout/portfolio";
+@import "./layout/team";
+@import "./layout/what-we-do";
+@import "./layout/menu";
+@import "./layout/mobile-menu";

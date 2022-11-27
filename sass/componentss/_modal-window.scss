@@ -7,7 +7,8 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), rotate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      rotate 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__backdrop.is-hidden {
     opacity: 0;
@@ -15,7 +16,7 @@
     visibility: hidden;
   }
   &__backdrop.is-hidden & {
-    transform: translate(-50%, -150%) scale(1.5) rotate(4turn);
+    transform: translateX(-100%);
   }
   & {
     position: absolute;
@@ -28,7 +29,7 @@
     padding: 40px;
 
     background-color: var(--logo-footer);
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateX(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 1200px) {
       max-width: 528px;
@@ -36,10 +37,10 @@
     }
   }
   &__icon {
-    transform: translate(-150%, -50%);
+    transform: translateX(-100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__btn {
+  &__button {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -59,8 +60,8 @@
   &__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__btn:hover,
-  &__btn:focus {
+  &__button:hover,
+  &__button:focus {
     fill: var(--logo-text);
   }
   &__title {
@@ -89,9 +90,11 @@
   &__username-group:focus-within &__username-icon,
   &__username-group:hover &__username-icon {
     fill: var(--logo-text);
+    outline: none;
   }
   &__username-input:hover {
     border-color: var(--logo-text);
+    outline: none;
   }
   &__username-input {
     margin-top: 4px;
@@ -125,9 +128,11 @@
   &__tel-group:focus-within &__tel-group-icon,
   &__tel-group:hover &__tel-group-icon {
     fill: var(--logo-text);
+    outline: none;
   }
   &__tel-input:hover {
     border-color: var(--logo-text);
+    outline: none;
   }
   &__tel-input {
     margin-top: 4px;
@@ -162,9 +167,11 @@
   &__email-group:focus-within &__email-group-icon,
   &__email-group:hover &__email-group-icon {
     fill: var(--logo-text);
+    outline: none;
   }
   &__email-input:hover {
     border-color: var(--logo-text);
+    outline: none;
   }
   &__email-input {
     margin-top: 4px;
@@ -195,6 +202,11 @@
     display: block;
     margin-bottom: 20px;
   }
+  &___feedback-group:focus-within,
+  &__feedback-group:hover {
+    fill: var(--logo-text);
+    outline: none;
+  }
   &__textarea-group {
     margin-top: 4px;
     width: 370px;
@@ -205,7 +217,7 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-
+    outline: 1px solid rgba(33, 33, 33, 0.2);
     display: block;
     resize: none;
 
@@ -262,7 +274,7 @@
     text-underline-position: under;
   }
 
-  &__btn-group-submit {
+  &__button-group-submit {
     padding: 10px 55px;
     margin: auto;
     display: block;

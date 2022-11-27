@@ -34,7 +34,8 @@
       font-size: 12px;
       line-height: calc(14 / 12);
       letter-spacing: 0.02em;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     @media screen and (min-width: 1200px) {
       font-size: 14px;
@@ -48,7 +49,7 @@
   }
 }
 
-.nav {
+.menu {
   &__title {
     color: var(--logo-text);
   }
@@ -71,7 +72,7 @@
   }
 }
 
-.hero {
+.slogan {
   &__title {
     color: var(--logo-footer);
     font-weight: 900;
@@ -90,7 +91,7 @@
   }
 }
 
-.features {
+.cards {
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -102,7 +103,7 @@
       text-align: left;
     }
   }
-  &__desc {
+  &__content {
     font-size: 14px;
     line-height: calc(25 / 14);
     letter-spacing: 0.03em;
@@ -110,7 +111,7 @@
   }
 }
 
-.work {
+.what-we-do {
   &__title {
     font-weight: 700;
     font-size: 36px;
@@ -118,7 +119,7 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
-  &__title-work {
+  &__title-what-we-do {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -131,7 +132,7 @@
   }
 }
 
-.teams {
+.team {
   &__title {
     font-weight: 700;
     font-size: 28px;
@@ -191,7 +192,7 @@
       line-height: calc(31 / 26);
     }
   }
-  &__addres {
+  &__address {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -232,7 +233,7 @@
   }
 }
 
-.portfolio-work {
+.portfolio-what-we-do {
   &__title {
     margin-bottom: 4px;
 

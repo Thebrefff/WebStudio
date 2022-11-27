@@ -1,4 +1,4 @@
-.work {
+.what-we-do {
   & {
     display: none;
     @media screen and (min-width: 1200px) {
@@ -20,7 +20,7 @@
     @extend %reset-link;
   }
 
-  &__title-work--position {
+  &__title-what-we-do--position {
     position: absolute;
     bottom: 0;
     right: 0;

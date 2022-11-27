@@ -1,4 +1,4 @@
-.teams {
+.team {
   & {
     background-color: #f5f4fa;
     @media screen and (max-width: 1199px) {
@@ -82,7 +82,8 @@
     fill: #afb1b8;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__social-link:hover,
   &__social-link:focus {
