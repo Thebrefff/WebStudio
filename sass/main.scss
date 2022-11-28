@@ -1,18 +1,14 @@
-// utils styles
 @import "./utilss/variables";
 @import "./utilss/placeholders";
 
-// base styles
 @import "./base/base";
 @import "./base/reset";
 
-// components styles
 @import "./componentss/buttons";
 @import "./componentss/container";
 @import "./componentss/modal-window";
 @import "./componentss/titles";
 
-// layout styles
 @import "./layout/clients";
 @import "./layout/cards";
 @import "./layout/footer";

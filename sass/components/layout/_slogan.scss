@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     background-color: #c4c4c4;
     background-image: linear-gradient(
         to right,
@@ -43,6 +42,7 @@
           url("../css/images/images.jpg/sloganpicture@1x.jpg");
       }
     }
+
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
       margin: 0 auto;
@@ -53,7 +53,6 @@
           rgba(47, 48, 58, 0.4)
         ),
         url("../css/images/slogan.jpg");
-
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -66,26 +65,6 @@
       }
     }
   }
-  // & {
-  //   @media screen and (min-width: 480px) {
-  //     padding: 118px 0;
-  //     min-width: 480px;
-  //     margin: 0 auto;
-
-  //     background-color: #c4c4c4;
-  //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //       url(../images/studio/sloganimg.jpg);
-  //     background-repeat: no-repeat;
-  //     background-position: center;
-  //   }
-  //   @media screen and (min-width: 768px) {
-  //   }
-  //   @media screen and (min-width: 1200px) {
-  //     max-width: 1600px;
-  //     margin: 0 auto;
-  //     padding: 200px 0;
-  //   }
-  // }
 
   &__title-position {
     margin-bottom: 30px;
@@ -94,14 +73,12 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     @media screen and (min-width: 768px) {
     }
+
     @media screen and (min-width: 1200px) {
       width: 696px;
     }
   }
-  // & {
-  //   @extend %section;
-  // }
 }
-
