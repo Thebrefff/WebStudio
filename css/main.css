@@ -1153,15 +1153,15 @@ ul {
 @media screen and (min-width: 768px) {
   .header__icon-tel {
     margin-right: 8px;
-    width: 10px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__icon-tel {
     margin-right: 10px;
-    width: 10px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 }
 .header__container {
@@ -1201,13 +1201,13 @@ ul {
       from(rgba(47, 48, 58, 0.4)),
       to(rgba(47, 48, 58, 0.4))
     ),
-    url(../images/studio/slogan-sm@1x.jpg);
+    url(../sass/components/css/images/slogan/slogan-s@1x.jpg);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/studio/slogan-sm@1x.jpg);
+    url(../sass/components/css/images/slogan/slogan-s@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -1221,13 +1221,13 @@ ul {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/studio/slogan-sm@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-s@2x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/slogan-sm@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-s@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1239,13 +1239,13 @@ ul {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/studio/slogan-md@1x.jpg);
+      url(../sass/components/css/images/slogan/slogan-m@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/slogan-md@1x.jpg);
+      url(../sass/components/css/images/slogan/slogan-m@1x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -1260,13 +1260,13 @@ ul {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/studio/slogan-md@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-m@2x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/slogan-md@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-m@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1281,13 +1281,13 @@ ul {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/studio/slogan-lg@1x.jpg);
+      url(../sass/components/css/images/slogan/slogan-l@1x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/slogan-lg@1x.jpg);
+      url(../sass/components/css/images/slogan/slogan-l@1x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -1302,13 +1302,13 @@ ul {
         from(rgba(47, 48, 58, 0.4)),
         to(rgba(47, 48, 58, 0.4))
       ),
-      url(../images/studio/slogan-lg@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-l@2x.jpg);
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/studio/slogan-lg@2x.jpg);
+      url(../sass/components/css/images/slogan/slogan-l@2x.jpg);
   }
 }
 .slogan__title-position {
