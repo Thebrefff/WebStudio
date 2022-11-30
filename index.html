@@ -239,11 +239,21 @@
           <ul class="what-we-do__list">
             <li class="what-we-do__item">
               <a class="what-we-do__link" href="#">
-                <img
-                  class="site__images"
-                  src="./images/leftpicture.jpg"
-                  alt="osoba programująca na tablecie i komputerze"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./sass/components/css/images/site-images/left@1x.jpg 1x,
+                      ./sass/components/css/images/site-images/left@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="site__images"
+                    src="./sass/components/css/images/site-images/left@1x.jpg"
+                    alt="osoba programująca na tablecie i komputerze"
+                  />
+                </picture>
                 <h3
                   class="what-we-do__title-what-we-do what-we-do__title-what-we-do--position"
                 >
@@ -253,11 +263,21 @@
             </li>
             <li class="what-we-do__item">
               <a class="what-we-do__link" href="#">
-                <img
-                  class="site__images"
-                  src="./images/images.jpg/centerpicture@1x.jpg"
-                  alt="osoba pracująca na laptopie"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./sass/components/css/images/site-images/center@1x.jpg 1x,
+                      ./sass/components/css/images/site-images/center@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="site__images"
+                    src="./sass/components/css/images/site-images/center@1x.jpg"
+                    alt="osoba pracująca na laptopie"
+                  />
+                </picture>
                 <h3
                   class="what-we-do__title-what-we-do what-we-do__title-what-we-do--position"
                 >
@@ -267,12 +287,21 @@
             </li>
             <li class="what-we-do__item">
               <a class="what-we-do__link link" href="#">
-                <img
-                  class="site__images"
-                  src="./images/images.jpg/rightpicture@1x.jpg"
-                  alt="osoba pracująca na tablecie"
-                />
-
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./sass/components/css/images/site-images/right@1x.jpg 1x,
+                      ./sass/components/css/images/site-images/right@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="site__images"
+                    src="./sass/components/css/images/site-images/right@1x.jpg"
+                    alt="osoba pracująca na tablecie"
+                  />
+                </picture>
                 <h3
                   class="what-we-do__title-what-we-do what-we-do__title-what-we-do--position"
                 >
@@ -288,11 +317,37 @@
           <h2 class="team__title team__title--position">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="site__images"
-                src="./images/images.jpg/productdesigner@1x.jpg"
-                alt="uśmiechnięty mężczyzna"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./sass/components/css/images/team/product-designer-s@1x.jpg 1x,
+                    ./sass/components/css/images/team/product-designer-s@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./sass/components/css/images/team/product-designer-m@1x.jpg 1x,
+                    ./sass/components/css/images/team/product-designer-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./sass/components/css/images/team/product-designer-l@1x.jpg 1x,
+                    ./sass/components/css/images/team/product-designer-l@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="site__images"
+                  src="./sass/components/css/images/team/product-designer-l@1x.jpg"
+                  alt="uśmiechnięty mężczyzna"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__user team__user--position">John Doe</h3>
                 <p class="team__develop team__develop--position">
@@ -339,11 +394,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="site__images"
-                src="./images/images.jpg/frontenddeveloper@1x.jpg"
-                alt="uśmiechnięta kobieta"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./sass/components/css/images/team/frontend-dev-s@1x.jpg 1x,
+                    ./sass/components/css/images/team/frontend-dev-s@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./sass/components/css/images/team/frontend-dev-m@1x.jpg 1x,
+                    ./sass/components/css/images/team/frontend-dev-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./sass/components/css/images/team/frontend-dev-l@1x.jpg 1x,
+                    ./sass/components/css/images/team/frontend-dev-l@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="site__images"
+                  src="./sass/components/css/images/team/frontend-dev-l@1x.jpg"
+                  alt="uśmiechnięta kobieta"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__user team__user--position">John Doe</h3>
                 <p class="team__develop team__develop--position">
@@ -390,11 +471,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="site__images"
-                src="./images/images.jpg/marketing@1x.jpg"
-                alt="uśmiechnięty mężczyzna"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./sass/components/css/images/team/marketing-s@1x.jpg 1x,
+                    ./sass/components/css/images/team/marketing-s@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./sass/components/css/images/team/marketing-m@1x.jpg 1x,
+                    ./sass/components/css/images/team/marketing-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./sass/components/css/images/team/marketing-l@1x.jpg 1x,
+                    ./sass/components/css/images/team/marketing-l@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="site__images"
+                  src="./sass/components/css/images/team/marketing-l@1x.jpg"
+                  alt="uśmiechnięty mężczyzna"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__user team__user--position">John Doe</h3>
                 <p class="team__develop team__develop--position">Marketing</p>
@@ -439,11 +546,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="site__images"
-                src="./images/images.jpg/uidesigner@1x.jpg"
-                alt="uśmiechnięty mężczyzna"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./sass/components/css/images/team/ui-s@1x.jpg 1x,
+                    ./sass/components/css/images/team/ui-s@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./sass/components/css/images/team/ui-m@1x.jpg 1x,
+                    ./sass/components/css/images/team/ui-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./sass/components/css/images/team/ui-l@1x.jpg 1x,
+                    ./sass/components/css/images/team/ui-l@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="site__images"
+                  src="./sass/components/css/images/team/ui-l@1x.jpg"
+                  alt="uśmiechnięty mężczyzna"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__user team__user--position">John Doe</h3>
                 <p class="team__develop team__develop--position">UI Designer</p>
