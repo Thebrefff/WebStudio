@@ -273,6 +273,13 @@ ul {
     max-height: 581px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 25px;
+  }
+}
 .modal__icon {
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -359,6 +366,11 @@ ul {
     width: 448px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal__username-input {
+    max-width: 100%;
+  }
+}
 .modal__username-icon {
   position: absolute;
   top: 30px;
@@ -396,6 +408,11 @@ ul {
 @media screen and (min-width: 1200px) {
   .modal__tel-input {
     width: 448px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal__tel-input {
+    max-width: 100%;
   }
 }
 .modal__tel-group-icon {
@@ -437,6 +454,11 @@ ul {
     width: 448px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal__email-input {
+    max-width: 100%;
+  }
+}
 .modal__email-group-icon {
   position: absolute;
   top: 30px;
@@ -448,6 +470,11 @@ ul {
   position: relative;
   display: block;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 479px) {
+  .modal__feedback-group {
+    max-width: 100%;
+  }
 }
 .modal___feedback-group:focus,
 .modal__feedback-group:hover {
@@ -476,6 +503,11 @@ ul {
 @media screen and (min-width: 1200px) {
   .modal__textarea-group {
     width: 448px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal__textarea-group {
+    max-width: 100%;
   }
 }
 .modal__checkbox-group {
